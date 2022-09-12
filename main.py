@@ -1,4 +1,5 @@
 from Quote_Game import QuotesQuizGame
+
 score = 0
 game = QuotesQuizGame()
 is_playing = True
@@ -36,7 +37,7 @@ while is_playing:
     user_guess = input("Who do you think, wrote the above line? : ")
     guess = 1
     while user_guess != author and hints > 0:
-        hint_text = print_hint(author, author_bio,  hints)
+        hint_text = print_hint(author, author_bio, hints)
         user_guess = input(hint_text + " : ")
         hints -= 1
         guess += 1
